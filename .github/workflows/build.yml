@@ -20,8 +20,9 @@ jobs:
         version: 8
     - name: Run install & build
       run: |
-        pnpm install
-        pnpm build
+        npm install
+        npm i -D webpack@4
+        npm build
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.5
       with:
